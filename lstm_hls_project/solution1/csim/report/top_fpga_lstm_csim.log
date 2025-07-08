@@ -1,0 +1,43 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../src_files/tb_lstm.cpp in debug mode
+../../../src_files/tb_lstm.cpp:12:11: error: redefinition of ‘const int HIDDEN_UNIT_COUNT’
+ const int HIDDEN_UNIT_COUNT = 64;
+           ^~~~~~~~~~~~~~~~~
+In file included from ../../../src_files/tb_lstm.cpp:1:
+../../../src_files/lstm_top.hpp:9:15: note: ‘constexpr const int HIDDEN_UNIT_COUNT’ previously defined here
+ constexpr int HIDDEN_UNIT_COUNT   = 64;
+               ^~~~~~~~~~~~~~~~~
+../../../src_files/tb_lstm.cpp: In function ‘int main()’:
+../../../src_files/tb_lstm.cpp:58:5: error: ‘InputType’ was not declared in this scope
+     InputType inputSignals[SEQUENCE_LENGTH][HIDDEN_UNIT_COUNT];
+     ^~~~~~~~~
+../../../src_files/tb_lstm.cpp:58:5: note: suggested alternative: ‘_ap_type’
+     InputType inputSignals[SEQUENCE_LENGTH][HIDDEN_UNIT_COUNT];
+     ^~~~~~~~~
+     _ap_type
+../../../src_files/tb_lstm.cpp:79:51: error: ‘inputSignals’ was not declared in this scope
+     load_csv_data(DATA_PATH + "data_testing.csv", inputSignals);
+                                                   ^~~~~~~~~~~~
+../../../src_files/tb_lstm.cpp:100:23: error: ‘std::chrono’ has not been declared
+     auto start = std::chrono::high_resolution_clock::now();
+                       ^~~~~~
+../../../src_files/tb_lstm.cpp:102:5: error: ‘lstm_model’ was not declared in this scope
+     lstm_model(
+     ^~~~~~~~~~
+../../../src_files/tb_lstm.cpp:102:5: note: suggested alternative: ‘lstm_kernel’
+     lstm_model(
+     ^~~~~~~~~~
+     lstm_kernel
+../../../src_files/tb_lstm.cpp:113:21: error: ‘std::chrono’ has not been declared
+     auto end = std::chrono::high_resolution_clock::now();
+                     ^~~~~~
+../../../src_files/tb_lstm.cpp:114:26: error: ‘std::chrono’ has not been declared
+     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+                          ^~~~~~
+../../../src_files/tb_lstm.cpp:114:53: error: ‘std::chrono’ has not been declared
+     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+                                                     ^~~~~~
+make: *** [csim.mk:79: obj/tb_lstm.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

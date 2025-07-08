@@ -1,0 +1,550 @@
+lstm_hls_project/src_files/lstm_kernel.cpp:15:38: error: use of undeclared identifier 'gateInputs'
+#pragma HLS array_partition variable=gateInputs complete dim=1
+                                     ^
+lstm_hls_project/src_files/lstm_kernel.cpp:15:38: warning: invalid variable expr  [-Winvalid-hls-pragmas]
+lstm_hls_project/src_files/lstm_kernel.cpp:16:38: error: use of undeclared identifier 'gateForget'
+#pragma HLS array_partition variable=gateForget cyclic factor=64 dim=1
+                                     ^
+lstm_hls_project/src_files/lstm_kernel.cpp:16:38: warning: invalid variable expr  [-Winvalid-hls-pragmas]
+lstm_hls_project/src_files/lstm_kernel.cpp:17:38: error: use of undeclared identifier 'gateForgetInv'
+#pragma HLS array_partition variable=gateForgetInv cyclic factor=64 dim=1
+                                     ^
+lstm_hls_project/src_files/lstm_kernel.cpp:17:38: warning: invalid variable expr  [-Winvalid-hls-pragmas]
+lstm_hls_project/src_files/lstm_kernel.cpp:18:38: error: use of undeclared identifier 'gateInput'
+#pragma HLS array_partition variable=gateInput cyclic factor=64 dim=1
+                                     ^
+lstm_hls_project/src_files/lstm_kernel.cpp:18:38: warning: invalid variable expr  [-Winvalid-hls-pragmas]
+lstm_hls_project/src_files/lstm_kernel.cpp:19:38: error: use of undeclared identifier 'gateInputInv'
+#pragma HLS array_partition variable=gateInputInv cyclic factor=64 dim=1
+                                     ^
+lstm_hls_project/src_files/lstm_kernel.cpp:19:38: warning: invalid variable expr  [-Winvalid-hls-pragmas]
+lstm_hls_project/src_files/lstm_kernel.cpp:20:38: error: use of undeclared identifier 'gateOutput'
+#pragma HLS array_partition variable=gateOutput cyclic factor=64 dim=1
+                                     ^
+lstm_hls_project/src_files/lstm_kernel.cpp:20:38: warning: invalid variable expr  [-Winvalid-hls-pragmas]
+lstm_hls_project/src_files/lstm_kernel.cpp:21:38: error: use of undeclared identifier 'gateOutputInv'
+#pragma HLS array_partition variable=gateOutputInv cyclic factor=64 dim=1
+                                     ^
+lstm_hls_project/src_files/lstm_kernel.cpp:21:38: warning: invalid variable expr  [-Winvalid-hls-pragmas]
+lstm_hls_project/src_files/lstm_kernel.cpp:22:38: error: use of undeclared identifier 'cellCandidate'
+#pragma HLS array_partition variable=cellCandidate cyclic factor=64 dim=1
+                                     ^
+lstm_hls_project/src_files/lstm_kernel.cpp:22:38: warning: invalid variable expr  [-Winvalid-hls-pragmas]
+lstm_hls_project/src_files/lstm_kernel.cpp:23:38: error: use of undeclared identifier 'newCellState'; did you mean 'cellState'?
+#pragma HLS array_partition variable=newCellState cyclic factor=64 dim=1
+                                     ^~~~~~~~~~~~
+                                     cellState
+lstm_hls_project/src_files/lstm_kernel.cpp:13:25: note: 'cellState' declared here
+          LstmStateType cellState [HIDDEN_UNIT_COUNT]
+                        ^
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: error: use of overloaded operator '/' is ambiguous (with operand types 'double' and 'LstmStateType' (aka 'ap_fixed<14, 6>'))
+ gateForgetInv [i] = (LstmStateType)(1.0 / gateForget [i]);
+                                     ~~~ ^ ~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2372:2997: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2373:3132: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2374:3031: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2375:3060: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2376:3379: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2377:3457: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2378:3305: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2379:3383: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2380:3342: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2381:3420: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2382:3490: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2383:3505: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, float)
+ gateForgetInv [i] = (LstmStateType)(1.0 / gateForget [i]);
+                                         ^
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(double, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(float, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long double, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__float128, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(int, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(long long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(__int128, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned int, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned long long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:77:42: note: built-in candidate operator/(unsigned __int128, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: error: use of overloaded operator '/' is ambiguous (with operand types 'double' and 'LstmStateType' (aka 'ap_fixed<14, 6>'))
+        gateInputInv [i] = (LstmStateType)(1.0 / gateInput [i]);
+                                           ~~~ ^ ~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2372:2997: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2373:3132: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2374:3031: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2375:3060: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2376:3379: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2377:3457: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2378:3305: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2379:3383: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2380:3342: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2381:3420: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2382:3490: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2383:3505: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, float)
+        gateInputInv [i] = (LstmStateType)(1.0 / gateInput [i]);
+                                               ^
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(double, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(float, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long double, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__float128, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(int, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(long long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(__int128, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned int, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned long long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:78:48: note: built-in candidate operator/(unsigned __int128, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: error: use of overloaded operator '/' is ambiguous (with operand types 'double' and 'LstmStateType' (aka 'ap_fixed<14, 6>'))
+        gateOutputInv [i] = (LstmStateType)(1.0 / gateOutput [i]);
+                                            ~~~ ^ ~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2372:2997: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2373:3132: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2374:3031: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2375:3060: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2376:3379: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2377:3457: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2378:3305: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2379:3383: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2380:3342: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2381:3420: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2382:3490: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2383:3505: note: candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, float)
+        gateOutputInv [i] = (LstmStateType)(1.0 / gateOutput [i]);
+                                                ^
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(double, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(float, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long double, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__float128, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(int, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(long long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(__int128, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned int, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned long long, unsigned __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, float)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, long double)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, __float128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, __int128)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, unsigned int)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, unsigned long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, unsigned long long)
+lstm_hls_project/src_files/lstm_kernel.cpp:79:49: note: built-in candidate operator/(unsigned __int128, unsigned __int128)
+In file included from lstm_hls_project/src_files/lstm_kernel.cpp:1:
+In file included from lstm_hls_project/src_files/lstm_top.hpp:5:
+In file included from /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_fixed.h:10:
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:992:13: warning: shift count is negative [-Wshift-count-negative]
+      ret.V <<= (_AP_I - _AP_W);
+            ^   ~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h:347:18: note: in instantiation of member function 'ap_fixed_base<21, 7, false, AP_TRN, AP_WRAP, 0>::to_ap_int_base' requested here
+    Base::V = op.to_ap_int_base().V;
+                 ^
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_int.h:237:9: note: in instantiation of function template specialization 'ap_int_base<7, false>::ap_int_base<21, 7, false, AP_TRN, AP_WRAP, 0>' requested here
+      : Base((ap_fixed_base<_AP_W2, _AP_I2, false, _AP_Q2, _AP_O2, _AP_N2>)op) {
+        ^
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:723:9: note: in instantiation of function template specialization 'ap_uint<7>::ap_uint<21, 7, AP_TRN, AP_WRAP, 0>' requested here
+    k = prod;
+        ^
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:808:5: note: in instantiation of function template specialization 'cordic_apfixed::hyperb_range_redux<14, 6, 14>' requested here
+    hyperb_range_redux(inabs, k, r);
+    ^
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:938:5: note: in instantiation of function template specialization 'cordic_apfixed::sinh_cosh_range_redux_cordic<14, 6>' requested here
+    sinh_cosh_range_redux_cordic(in,s_out,c_out);
+    ^
+/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1501:25: note: in instantiation of function template specialization 'cordic_apfixed::generic_sinh<14, 6>' requested here
+ return cordic_apfixed::generic_sinh(x);
+                        ^
+lstm_hls_project/src_files/lstm_kernel.cpp:5:17: note: in instantiation of function template specialization 'hls::sinh<14, 6>' requested here
+    return hls::sinh(x) / hls::cosh(x);
+                ^
+9 warnings and 12 errors generated.

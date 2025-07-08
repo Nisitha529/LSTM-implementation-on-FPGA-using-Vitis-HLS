@@ -1,0 +1,1422 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:15:38" msg_body="use of undeclared identifier 'gateInputs'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:16:38" msg_body="use of undeclared identifier 'gateForget'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:17:38" msg_body="use of undeclared identifier 'gateForgetInv'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:18:38" msg_body="use of undeclared identifier 'gateInput'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:19:38" msg_body="use of undeclared identifier 'gateInputInv'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:20:38" msg_body="use of undeclared identifier 'gateOutput'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:21:38" msg_body="use of undeclared identifier 'gateOutputInv'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3776" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:22:38" msg_body="use of undeclared identifier 'cellCandidate'">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3777" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:23:38" msg_body="use of undeclared identifier 'newCellState'; did you mean 'cellState'?">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4436" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:13:25" msg_body="'cellState' declared here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3325" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="use of overloaded operator '/' is ambiguous (with operand types 'double' and 'LstmStateType' (aka 'ap_fixed&lt;14, 6&gt;'))">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2372:2997" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2373:3132" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2374:3031" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2375:3060" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2376:3379" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2377:3457" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2378:3305" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2379:3383" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2380:3342" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2381:3420" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2382:3490" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4372" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:2383:3505" msg_body="candidate function [with _AP_W = 14, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(double, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(float, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long double, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__float128, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(int, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(long long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(__int128, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned int, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned long long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:77:42" msg_body="built-in candidate operator/(unsigned __int128, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3325" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="use of overloaded operator '/' is ambiguous (with operand types 'double' and 'LstmStateType' (aka 'ap_fixed&lt;14, 6&gt;'))">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(double, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(float, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long double, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__float128, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(int, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(long long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(__int128, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned int, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned long long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:78:48" msg_body="built-in candidate operator/(unsigned __int128, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-3325" msg_severity="ERROR" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="use of overloaded operator '/' is ambiguous (with operand types 'double' and 'LstmStateType' (aka 'ap_fixed&lt;14, 6&gt;'))">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(double, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(float, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long double, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__float128, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(int, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(long long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(__int128, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned int, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned long long, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, float)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, long double)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, __float128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, unsigned int)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, unsigned long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, unsigned long long)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4370" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:79:49" msg_body="built-in candidate operator/(unsigned __int128, unsigned __int128)">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5169" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:992:13" msg_body="shift count is negative">
+        <args ClangWarningOption="shift-count-negative"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4526" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h:347:18" msg_body="in instantiation of member function 'ap_fixed_base&lt;21, 7, false, AP_TRN, AP_WRAP, 0&gt;::to_ap_int_base' requested here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4235" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/ap_int.h:237:9" msg_body="in instantiation of function template specialization 'ap_int_base&lt;7, false&gt;::ap_int_base&lt;21, 7, false, AP_TRN, AP_WRAP, 0&gt;' requested here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4235" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:723:9" msg_body="in instantiation of function template specialization 'ap_uint&lt;7&gt;::ap_uint&lt;21, 7, AP_TRN, AP_WRAP, 0&gt;' requested here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4235" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:808:5" msg_body="in instantiation of function template specialization 'cordic_apfixed::hyperb_range_redux&lt;14, 6, 14&gt;' requested here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4235" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/hls_cordic_apfixed.h:938:5" msg_body="in instantiation of function template specialization 'cordic_apfixed::sinh_cosh_range_redux_cordic&lt;14, 6&gt;' requested here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4235" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_math.h:1501:25" msg_body="in instantiation of function template specialization 'cordic_apfixed::generic_sinh&lt;14, 6&gt;' requested here">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4235" msg_severity="INFO" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:5:17" msg_body="in instantiation of function template specialization 'hls::sinh&lt;14, 6&gt;' requested here">
+        <args/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:15:38" msg_body="invalid variable expr">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:16:38" msg_body="invalid variable expr">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:17:38" msg_body="invalid variable expr">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:18:38" msg_body="invalid variable expr">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:19:38" msg_body="invalid variable expr">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:20:38" msg_body="invalid variable expr">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:21:38" msg_body="invalid variable expr">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5554" msg_severity="WARNING" msg_loc="lstm_hls_project/src_files/lstm_kernel.cpp:22:38" msg_body="invalid variable expr">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

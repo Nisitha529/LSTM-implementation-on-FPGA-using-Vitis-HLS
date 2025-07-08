@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="lstm_kernel.cpp" path="/media/nisitha/My_Passport/MOODLE/Vivado_projects/LSTM_project/HLS_project/lstm_hls_project/src_files/lstm_kernel.cpp"/>
+    <originFiles name="lstm_top.hpp" path="/media/nisitha/My_Passport/MOODLE/Vivado_projects/LSTM_project/HLS_project/lstm_hls_project/src_files/lstm_top.hpp"/>
+    <originFiles name="lstm_model.cpp" path="/media/nisitha/My_Passport/MOODLE/Vivado_projects/LSTM_project/HLS_project/lstm_hls_project/src_files/lstm_model.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_lstm.cpp" path="/media/nisitha/My_Passport/MOODLE/Vivado_projects/LSTM_project/HLS_project/lstm_hls_project/src_files/tb_lstm.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

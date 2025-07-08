@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "top_fpga_lstm",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "top_fpga_lstm"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/media/nisitha/My_Passport/MOODLE/Vivado_projects/LSTM_project/HLS_project/lstm_hls_project/solution1/csynth.tcl",
+    "sourceLine": 17,
+    "success": false
+  }
+]

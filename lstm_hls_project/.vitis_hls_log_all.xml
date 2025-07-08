@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 207-3325] use of overloaded operator '/' is ambiguous (with operand types 'double' and 'LstmStateType' (aka 'ap_fixed&lt;14, 6>')) (lstm_hls_project/src_files/lstm_kernel.cpp:79:49)" projectName="lstm_hls_project" solutionName="solution1" date="2025-07-08T10:04:30.437+0530"/>
+        <logs message="ERROR: [HLS 207-3325] use of overloaded operator '/' is ambiguous (with operand types 'double' and 'LstmStateType' (aka 'ap_fixed&lt;14, 6>')) (lstm_hls_project/src_files/lstm_kernel.cpp:78:48)" projectName="lstm_hls_project" solutionName="solution1" date="2025-07-08T10:04:29.406+0530"/>
+      </synLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 207-5169] shift count is negative (/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h:992:13)" projectName="lstm_hls_project" solutionName="solution1" date="2025-07-08T10:04:32.023+0530" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
